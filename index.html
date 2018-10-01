@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        @font-face {
+            font-family: 'Jheng';
+            src: url('https://www.fontify.me/wf/5c804ea9ee5a480b84411962aeb28fcc');
+        }
+        .contact-info{
+            width:60%;
+            margin: 0 auto;
+            color:grey;
+        }
+        .contact-info__wrapper{
+            border:1px solid rgba(0,0,0,.2);
+            padding:20px;
+        }
+        .contact-info__horizontalLine{
+        margin-top:8px;
+            padding-right:10px;
+            height:72px;
+            border-right: 1px solid #41A189;
+            margin-right:15px;
+
+        }
+        /* CONTENT ( MAIN INFO ) */
+        .contact-info__content{
+            margin-top: 5px;
+        }
+        .contact-info__content:hover{
+            cursor: default;
+        }
+        .contact-info__content div{
+            padding-top:4px;
+        }
+        .contact-info__name{
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .contact-info__tel{
+            text-decoration: none;
+            border-bottom:1px solid grey;
+            font-weight: bold;
+            color:rgba(0,0,0,.6);
+        }
+        .contact-info__tel:hover{
+            color:#41A189;
+            border-bottom-color: #41A189;
+        }
+        .contact-info__wrapper{
+            display:flex;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="contact-info">
+        <div class="contact-info__wrapper">
+            <div class="contact-info__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="89" viewBox="0 0 250 89">
+                    <image style="margin:0 auto;" id="Слой_1" data-name="Слой 1" width="250" height="89" xlink:href="data:img/png;base64,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"/>
+                </svg>
+            </div>
+            <div class="contact-info__horizontalLine"></div>
+            <div class="contact-info__content">
+                <h3 class="contact-info__name">Valeria Yagodina | Marketing specialist</h3>
+                <span class="contact-info__adress">Oruzhejnyj pereulok, 23, 125047, Moscow, Russia</span><br>
+                <div>
+                    Mob: <a href="tel:+79151302833" class="contact-info__tel">+79151302833</a> |
+                    <a href="mailto:valeria.iagodina@zichain.io" class="contact-info__tel">valeria.iagodina@zichain.io</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
